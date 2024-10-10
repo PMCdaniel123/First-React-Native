@@ -110,7 +110,7 @@ const HomeScreen = ({ navigation }) => {
 
       {filteredArtTools.length === 0 ? (
         <View style={styles.containerNothing}>
-          <Text>No art tools in this brands.</Text>
+          <Text>No art tools found.</Text>
         </View>
       ) : (
         <FlatList
@@ -137,6 +137,13 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#f5f5f5",
     padding: 10,
+  },
+  containerNothing: {
+    flex: 1,
+    backgroundColor: "#f5f5f5",
+    padding: 10,
+    justifyContent: "center",
+    alignItems: "center",
   },
   headerContainer: {
     flexDirection: "column",

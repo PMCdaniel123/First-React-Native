@@ -52,7 +52,7 @@ const FavoritesScreen = ({ navigation }) => {
         />
       )}
 
-      {favorites.length > 0 && (
+      {favorites.length > 1 && (
         <View>
           <Modal
             animationType="slide"
